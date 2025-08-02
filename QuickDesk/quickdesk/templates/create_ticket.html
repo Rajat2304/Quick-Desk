@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Ticket - QuickDesk</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <div>
+        <h1>Create a New Ticket</h1>
+        <form id="create-ticket-form">
+            <div>
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject" required style="width: 300px;">
+            </div>
+            <br>
+            <div>
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description" rows="8" required style="width: 300px;"></textarea>
+            </div>
+            <br>
+            <button type="submit">Submit Ticket</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="{% static 'js/create_ticket.js' %}"></script>
+</body>
+</html>

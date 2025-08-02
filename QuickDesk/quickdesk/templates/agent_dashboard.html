@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agent Dashboard - QuickDesk</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <div>
+        <h1>Agent Dashboard</h1>
+        <button id="logout-button">Logout</button>
+        <hr>
+        <h2>All Tickets</h2>
+        <div id="ticket-list"><p>Loading tickets...</p></div>
+    </div>
+    
+    <!-- This line correctly points to the agent_dashboard.js file -->
+    <script src="{% static 'js/agent_dashboard.js' %}"></script>
+</body>
+</html>
