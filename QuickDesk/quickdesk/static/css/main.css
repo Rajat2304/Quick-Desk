@@ -1,12 +1,132 @@
-/* static/css/main.css */
-body {
-    font-family: sans-serif;
-    background-color: #f4f4f4;
-    margin: 2rem;
+
+/* --- Global Styles --- */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --container-bg: #ffffff;
+    --font-color: #333;
+    --border-color: #dee2e6;
+    --success-color: #28a745;
+    --error-color: #dc3545;
 }
-div {
-    background-color: white;
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- Container --- */
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--container-bg);
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* --- Typography --- */
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 1.5rem 0;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-primary:hover {
+    background-color: #0069d9;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* --- Forms --- */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+/* --- Ticket List --- */
+.ticket-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ticket-list li {
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.ticket-list li:hover {
+    background-color: #f1f1f1;
+}
+
+/* --- Messages --- */
+.message {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+}
+.message.success {
+    color: var(--success-color);
+    background-color: #d4edda;
+}
+.message.error {
+    color: var(--error-color);
+    background-color: #f8d7da;
 }
