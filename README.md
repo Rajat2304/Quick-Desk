@@ -43,7 +43,7 @@ pip (Python package installer)
 
 2. Clone the Repository
 bash
-git clone https://github.com/Rajat2304/QuickDesk.git
+git clone https://github.com/Rajat2304/quickdesk.git
 cd QuickDesk
 
 
