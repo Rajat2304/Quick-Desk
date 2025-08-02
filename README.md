@@ -45,7 +45,7 @@ pip (Python package installer)
 bash
 git clone https://github.com/Rajat2304/QuickDesk.git
 cd QuickDesk
-(Note: This assumes your repository name is "QuickDesk". If not, change it accordingly.)
+
 
 3. Set Up a Virtual Environment
 It is highly recommended to use a virtual environment to manage project dependencies.
