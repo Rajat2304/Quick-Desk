@@ -7,20 +7,19 @@
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>Create a New Ticket</h1>
         <form id="create-ticket-form">
-            <div>
-                <label for="subject">Subject:</label><br>
-                <input type="text" id="subject" name="subject" required style="width: 300px;">
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" class="form-control" required>
             </div>
-            <br>
-            <div>
-                <label for="description">Description:</label><br>
-                <textarea id="description" name="description" rows="8" required style="width: 300px;"></textarea>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="8" class="form-control" required></textarea>
             </div>
-            <br>
-            <button type="submit">Submit Ticket</button>
+            <button type="submit" class="btn btn-primary">Submit Ticket</button>
+            <a href="/dashboard/" class="btn btn-secondary">Cancel</a>
         </form>
         <div id="message"></div>
     </div>
